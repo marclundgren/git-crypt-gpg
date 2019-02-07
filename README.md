@@ -7,7 +7,7 @@ gpg --full-generate-key
 ```
 
 ## encrypt secret files
-```
+```console
 $ touch index.html .gitattributes README.md
 $ echo "secretfile filter=git-crypt diff=git-crypt\ntreasure.key filter=git-crypt diff=git-crypt" >> .gitattributes
 $ git add --all
@@ -20,7 +20,7 @@ $ git-crypt add-gpg-user "Marc Lundgren <marclundgren2.0@gmail.com>"
 $ git push
 ```
 
-```
+```console
 $ git-crypt status
 not encrypted: README.md
 not encrypted: .git-crypt/.gitattributes
