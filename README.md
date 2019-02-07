@@ -1,3 +1,16 @@
+# git-crypt-gpg
+
+## install gpg
+```
+brew install gpg
+```
+
+## configure gpg
+```
+gpg --full-generate-key
+```
+
+## encrypt secret files
 ```
 $ touch index.html .gitattributes README.md
 $ echo "secretfile filter=git-crypt diff=git-crypt\ntreasure.key filter=git-crypt diff=git-crypt" >> .gitattributes
