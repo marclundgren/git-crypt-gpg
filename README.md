@@ -18,7 +18,7 @@ $ git add --all
 $ git commit -m "init"
 $ git-crypt init
 $ cat secretfile treasure.key
-$ echo "The treasure is burried under the seventh tomb." >> secretfile
+$ echo "The treasure is buried under the seventh tomb." >> secretfile
 $ echo "12 42 99 7 24 7" >> treasure.key
 $ git-crypt add-gpg-user "Marc Lundgren <marclundgren2.0@gmail.com>"
 $ git push
@@ -33,4 +33,21 @@ not encrypted: .gitattributes
 not encrypted: index.html
     encrypted: secretfile
     encrypted: treasure.key
+```
+
+
+## .gitattributes
+```
+secretfile filter=git-crypt diff=git-crypt
+treasure.key filter=git-crypt diff=git-crypt
+```
+
+## secretfile - https://github.com/marclundgren/git-crypt-gpg/blob/master/secretfile
+```
+The treasure is buried under the seventh tomb.
+```
+
+## treasure.key - https://github.com/marclundgren/git-crypt-gpg/blob/master/treasure.key
+```
+12 42 99 7 24 7
 ```
