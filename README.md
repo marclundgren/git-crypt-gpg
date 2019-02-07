@@ -18,9 +18,6 @@ echo "The treasure is buried under the seventh tomb." >> secretfile
 echo "12 42 99 7 24 7" >> treasure.key
 git-crypt add-gpg-user "Marc Lundgren <marclundgren2.0@gmail.com>"
 git push
-```
-
-```console
 git-crypt status
 ```
 ```
@@ -34,13 +31,17 @@ not encrypted: index.html
 ```
 
 #### after re-cloning the repo, or someone else clones the repo
-```
+```console
 $ cat secretfile
+```
+```
 GITCRYPT����
 �`ZE���&y�� y͌�>�M�����RQd�� ����ht�܊h`��gp%
 ```
-```
+```console
 $ cat treasure.key
+```
+```
 GITCRYPT�x��zMxV�y���Ds(V~��%
 ```
 
