@@ -1,12 +1,8 @@
 # git-crypt-gpg
 
-## install gpg
+## install and configure gpg
 ```
 brew install gpg
-```
-
-## configure gpg
-```
 gpg --full-generate-key
 ```
 
@@ -35,11 +31,13 @@ not encrypted: index.html
     encrypted: treasure.key
 ```
 
+#### after re-cloning the repo, or someone else clones the repo
 ```
-// after re-cloning the repo, or someone else clones the repo
 $ cat secretfile
 GITCRYPT����
 �`ZE���&y�� y͌�>�M�����RQd�� ����ht�܊h`��gp%
+```
+```
 $ cat treasure.key
 GITCRYPT�x��zMxV�y���Ds(V~��%
 ```
