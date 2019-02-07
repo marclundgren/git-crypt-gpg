@@ -42,12 +42,12 @@ secretfile filter=git-crypt diff=git-crypt
 treasure.key filter=git-crypt diff=git-crypt
 ```
 
-## [secretfile](https://github.com/marclundgren/git-crypt-gpg/blob/master/secretfile)
+## [secretfile](https://github.com/marclundgren/git-crypt-gpg/blob/master/secretfile) (encrypted)
 ```
 The treasure is buried under the seventh tomb.
 ```
 
-## [treasure.key](https://github.com/marclundgren/git-crypt-gpg/blob/master/treasure.key)
+## [treasure.key](https://github.com/marclundgren/git-crypt-gpg/blob/master/treasure.key) (encrypted)
 ```
 12 42 99 7 24 7
 ```
